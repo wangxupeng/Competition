@@ -20,7 +20,7 @@ def get_sum(str_array):
     """
         返回字符串数组中数字的总和
     """
-    # 去掉不能转换成数字的数据
+    # 去掉不能转换成数字的数据(filter()根据判断结果自动过滤掉不符合条件的元素，返回由符合条件元素组成的iterator。)
     cleaned_data = list(filter(is_convert_float, str_array))  #python2 与python3不同,python3这里要加上list 
     
     # 转换数据类型
