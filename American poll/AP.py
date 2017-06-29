@@ -32,7 +32,7 @@ def get_sum(str_array):
 def run_main():
     filename="presidential_polls.csv"
     with open(filename,"r") as f:
-        col_names_str = f.readline()[:-1] #[:-1]表示不读取末尾的换行符
+        col_names_str = f.readline()[:-1] #[:-1]表示不读取末尾的换行符(其中readline和readlines不一样,readline只读一行)
     #讲字符串拆分,并组成列表
     col_name_lst= col_names_str.split(",")
     # 使用列名
