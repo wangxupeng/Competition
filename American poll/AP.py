@@ -21,7 +21,7 @@ def get_sum(str_array):
         返回字符串数组中数字的总和
     """
     # 去掉不能转换成数字的数据
-    cleaned_data = list(filter(is_convert_float, str_array))
+    cleaned_data = list(filter(is_convert_float, str_array))  #python2 与python3不同,python3这里要加上list 
     
     # 转换数据类型
     float_array = np.array(cleaned_data, np.float)
