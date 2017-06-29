@@ -60,8 +60,8 @@ def run_main():
     enddate_lst = [enddate.replace('-','/') for enddate in enddate_lst]
     
 #    将日期字符串转换成日期
-    date_lst = [datetime.datetime.strptime(enddate,'%m/%d/%Y') for enddate in enddate_lst] #python2 与pyhton3 在这里不同
-    month_lst = ['%d-%02d' %(date_obj.year, date_obj.month) for date_obj in date_lst]
+    date_lst = [datetime.datetime.strptime(enddate,'%m/%d/%Y') for enddate in enddate_lst] 
+    month_lst = ['%d-%02d' %(date_obj.year, date_obj.month) for date_obj in date_lst]#%02d表示输于两位数足两位前面填充0
     
     month_array = np.array(month_lst)
     months = np.unique(month_array)
