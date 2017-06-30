@@ -16,7 +16,6 @@ def run_main():
     # 其中每个元素是键值对，“键”是国家名称，“值”是列表结构，
     # 列表的第一个数为该国家女性统计数据，第二个数为该国家男性统计数据
     # 如 {'United States': [20, 50], 'Canada': [30, 40]}
-    # 思考：这里的“值”为什么用列表(list)而不用元组(tuple)
     result_dict = {}
 
     with open(data_path, 'r', newline='') as csvfile:
@@ -31,6 +30,7 @@ def run_main():
                 print('正在处理第{}行数据...'.format(i))
             # 性别数据
             gender_val = row[2]
+            # 国籍数据
             country_val = row[3]
             #年龄数据
             age_val=row[1]
