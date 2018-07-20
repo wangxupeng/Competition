@@ -1,1 +1,1 @@
-# Share my competition
+# Share my competitions
